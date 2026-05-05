@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Project portfolio for Danny Soza, showcasing AI and software engineering work.">
+    <meta name="keywords" content="projects, portfolio, AI, coding, computer science">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects | Danny Soza</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+    <link rel="stylesheet" href="../styles/print.css" media="print">
+
+    
+</head>
+
+<body>
+    <header>
+        <h1>IMDB Classifier</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about/index.html">About Me</a></li>
+            <li><a href="index.html">Return to Projects</a></li>
+            <li><a href="../contact/index.html">Contact</a></li>
+            <li><a href="../connect/index.html">Connect</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Introduction: </h2>
+        
+        <h4>
+            Problem Statement:
+        </h4>
+
+        <p>
+            Sentiment analysis was used to automatically determine whether a movie review expressed a positive or negative opinion.
+             Sentiment analysis is one of the most studied topics within natural language processing. 
+             The IMDB movie review dataset has clearly labeled positive and negative reviews, and was used as a benchmark for evaluating classifiers.
+             Modern models have become more accurate at classification; however, even though they score well, there is room for improvement. 
+             There are some reviews within this data set that are difficult for the model to label correctly, and understanding or testing why this happens can be useful for understanding sentiment analysis.
+        </p>
+
+        <h4>
+            Approach:
+        </h4>
+
+        <p>
+            There were two main parts of the project. We chose to test 250 IMDB reviews (limited by computing power) and later increased to 1000, with an even split of positive and negative reviews.
+             We then ran them through a pre-trained DistilBERT model from Hugging Face to see how well it performs.
+             We then assigned results: anything misclassified to the "hard" group and anything correctly classified to the "easy" group.
+             We then came up with certain words, such as "not" or "never," and reviews that go back and forth between the two groups. This way, we developed features we believed would help a classifier predict reviews.
+        </p>
+
+        <h4>
+            Results:
+        </h4>
+
+        <p>
+            We used three approaches to determine which worked best for classification. 
+            The first model was trained on all reviews, the second on only hard ones, and the third on hard reviews and a similar number of easy ones. 
+            We then used all three models to vote on each review, and the majority vote determines what we go with. 
+        </p>
+
+        <h4>
+            Slides:
+        </h4>
+        <ul>
+        <li><a href="https://docs.google.com/presentation/d/1z_XPRlweYGJygCrj01XSWeYtgXLRBgVnwLhttZ5oFmQ/edit?usp=sharing">View Slides</a></li>
+        </ul>
+        <h4>
+            View Colab Code:
+        </h4>
+        <ul>
+        <li><a href="https://colab.research.google.com/drive/1gYyE-eIW4__wmI8aHeVWoP3iTKd9qXJv?usp=sharing">View Colab Notebook</a></li>
+        </ul>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Danny Soza | <a href="mailto:dan.msoza@gmail.com">dan.msoza@gmail.com</a></p>
+    </footer>
+</body>
+</html>
