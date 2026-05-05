@@ -1,0 +1,211 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+    margin: 0;
+    background-color: white;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;     
+    justify-content: center;
+    background-color: #000030;
+    color: white;
+    padding: 1em;
+    gap: 20px;      
+}
+
+header img {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+}
+
+#welcome::after {
+    content: '|';
+    animation: blink 1s infinite;
+    margin-left: 2px;
+}
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    background-color: #000030;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    width: 100%;
+}
+
+nav ul ul {
+    position: absolute;
+    width: 100%;
+    display: none;
+}
+
+nav ul li {
+    flex-basis: 20%;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: darkgrey;
+    color: white;
+    padding: 10px 2px 10px;
+    margin: 0;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+nav a:focus {
+    outline: 2px solid orange;
+}
+
+nav a:hover,
+nav a#current {
+    color: orange;
+}
+
+main {
+    padding: 2em;
+    max-width: 900px;
+    margin: auto;
+    min-height: 60vh;
+}
+
+section:first-child h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+section:last-child h2 {
+    text-align: left;
+    margin-bottom: 1em;
+    margin-left: 3em;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    background-color: darkgray;
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.project img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+    background-color: #f0f0f0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.course-table th {
+    background-color: #000030;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.course-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.course-table tr:last-child td {
+    border-bottom: none;
+}
+
+.course-table tr:nth-child(even) {
+    background-color: #e4e4e4;
+}
+
+#printPage {
+    margin: 1em 0;
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#printPage:hover {
+    background-color: #000030;
+}
+
+footer {
+    background-color: #000030;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-size: 0.8em;
+}
+
+footer a {
+    color: orange;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project img {
+        margin-bottom: 10px;
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 1em;
+    }
+
+    form {
+        padding: 1em;
+    }
+}

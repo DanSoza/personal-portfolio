@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--Danny Soza-->
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Contact form for reaching out to Danny Soza.">
+    <meta name="keywords" content="contact, form, message, email Danny Soza.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <Title>Contact | Danny Soza </Title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+    <link rel="stylesheet" href="../styles/print.css" media="print">
+
+    <style>
+        form {
+            max-width: 600px;
+            margin: auto;
+            background-color: #f3f3f3;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px black;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+        
+        form input[type="text"],
+        form input[type="email"]{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 1.5em;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+
+    
+        form button[type="submit"] {
+            background-color: orange;
+            color: black;
+            font-weight: bold;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        form button[type="submit"]:hover {
+            background-color: #ffb347;
+        }
+
+        @media (max-width: 600px) {
+            form {
+                padding: 1em;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about/index.html">About Me</a></li>
+            <li><a href="../projects/index.html">Projects</a></li>
+            <li><a href="#" id="current">Contact</a></li>
+            <li><a href="../connect/index.html">Connect</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Send me an Email:</h2>
+
+        <form action="../confirmation/index.html" method="get">
+            <label>Name:
+                <input type="text" id="name" name="name" required>
+            </label><br>
+
+            <label>
+                Email:
+                <input type="email" id="email" name="email" required>
+            </label><br>
+
+            <label>
+                Send me your Linkedin:
+                <input type="text" id="Linkedin" name="Linkedin">
+            </label><br>
+
+            <button type="submit">Submit</button>
+
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Danny Soza | <a href="mailto:dan.msoza@gmail.com">dan.msoza@gmail.com</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,23 @@
+body {
+    font-family: serif;
+    background: white !important;
+    color: black !important;
+}
+
+nav, footer, img {
+    display: none !important;
+}
+
+main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: black !important;
+}
+
+table {
+    border: 1px solid #000;
+}

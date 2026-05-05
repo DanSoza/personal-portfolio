@@ -1,0 +1,38 @@
+
+@media (max-width: 700px) {
+    
+    .project {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project img {
+        margin-bottom: 10px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    
+    .logo {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 600px) {
+    form {
+        padding: 1em;
+    }
+
+    main {
+        padding: 1em;
+    }
+}
+
+
+@media (max-width: 600px) {
+    main {
+        padding: 1em;
+    }
+}
